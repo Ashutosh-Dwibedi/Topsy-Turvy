@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mutated_white">#bfbfbf</color>
+    <color name="red">#DB0000</color>
+    <color name="dark_yellow">#d1b91e</color>
+    <color name="light_yellow">#e0d180</color>
+    <color name="faded_yellow">#f7eaa3</color>
+    <color name="mutated_yellow_1">#f7f4d2</color>
+    <color name="hint_color">#1c1b1f</color>
+    <color name="brown">#582508</color>
+    <color name="light_brown">#803b13</color>
+    <color name="wood_brown">#362d30</color>
+    <color name="tree_leaves_night">#28415c</color>
+    <color name="mutated_yellow_2">#fbf33f</color>
+    <color name="mutated_yellow_3">#fbf962</color>
+    <color name="mutated_yellow_4">#DAD7BA</color>
+    <color name="mutated_black">#262426</color>
+    <color name="door_color">#5e4b43</color>
+    <color name="dark_red">#8b0000</color>
+</resources>

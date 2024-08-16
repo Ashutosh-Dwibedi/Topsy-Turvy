@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/winner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player"
+        android:textAlignment="center"
+        android:textColor="@color/mutated_yellow_1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/winner_animation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/winner_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/winner_animation"
+        android:padding="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/winner_dialog_new_game_button"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/door_color"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/baseline_restart_alt_24"
+        app:iconSize="36dp"
+        app:iconTint="@color/mutated_yellow_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/winner_animation"
+        app:rippleColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.35"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/winner_dialog_back_to_home_button"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/door_color"
+        app:cornerRadius="12dp"
+        app:icon="@drawable/baseline_home_24"
+        app:iconSize="36dp"
+        android:layout_marginStart="16dp"
+        app:iconTint="@color/mutated_yellow_1"
+        app:layout_constraintBottom_toBottomOf="@+id/winner_dialog_new_game_button"
+        app:layout_constraintStart_toEndOf="@+id/winner_dialog_new_game_button"
+        app:layout_constraintTop_toTopOf="@+id/winner_dialog_new_game_button"
+        app:rippleColor="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

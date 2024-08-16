@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="550dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/game_rules_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/topsy_turvy_game_rules"
+        android:textSize="28sp"
+        android:textColor="@color/mutated_yellow_1"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x"
+        app:rippleColor="@color/brown"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:id="@+id/cancel_info_dialog"
+        app:layout_constraintBottom_toBottomOf="@+id/game_rules_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/game_rules_heading" />
+
+        <ScrollView
+            android:id="@+id/info_dialog_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/game_rules_heading">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_description_1"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_description_2"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_description_3"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_description_4"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rules_description_5"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:src="@drawable/combo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combo_details"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:src="@drawable/dual_combo_1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:src="@drawable/dual_combo_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dual_combo_details"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:src="@drawable/triple_combo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/triple_combo_details"
+                    android:textColor="@color/mutated_yellow_1" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:padding="8dp"
+                    android:src="@drawable/quad_combo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quad_combo_details"
+                    android:textColor="@color/mutated_yellow_1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/this_game_is_developed_by_ashutosh_dwibedi"
+                    android:background="@color/wood_brown"
+                    android:textColor="@color/mutated_yellow_1" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

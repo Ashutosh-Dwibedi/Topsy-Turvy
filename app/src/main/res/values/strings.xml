@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Topsy-Turvy</string>
+    <string name="login_background">login_background</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="feather_and_ink">feather and ink</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="please_fill_all_data">Please fill all data</string>
+    <string name="play_with_ai">Play With AI</string>
+    <string name="multiplayer">Multiplayer</string>
+    <string name="select_card_mode">Select Card Mode</string>
+    <string name="ancient_mode">Ancient Mode</string>
+    <string name="modern_mode_light">Modern Mode (Light)</string>
+    <string name="modern_mode_heavy">Modern Mode (Heavy)</string>
+    <string name="play">PLAY</string>
+    <string name="copyright_ashutoshdwibedi2021">Copyright©Ashutoshdwibedi2023</string>
+    <string name="x">X</string>
+    <string name="topsy_turvy_game_rules">Topsy-Turvy Game Rules</string>
+    <string name="rules_description_1">1. Each game has four different cards. The cards are randomly generated for the user when they choose a mystery cardboard in turn basis.</string>
+    <string name="rules_description_2">2. Each card has different points as mentioned in the game page. User will get points based on the card he got randomly.</string>
+    <string name="rules_description_3">3. User will have to score 100 points before the opponent to win the game.</string>
+    <string name="rules_description_4">4. At the beginning of the game one player will be randomly chosen as toss winner and will select the first card.</string>
+    <string name="rules_description_5">5. There will be combo points in case of the following scenario,</string>
+    <string name="logout">Logout</string>
+    <string name="reset">Reset</string>
+    <string name="match_played">Match Played</string>
+    <string name="_0">0</string>
+    <string name="match_won">Match Won</string>
+    <string name="match_lose">Match Lose</string>
+    <string name="personal_best">Personal Best</string>
+    <string name="total_point_scored">Total Point Scored</string>
+    <string name="guest_user">Guest User</string>
+    <string name="guest_username">Guest Username</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="_1_point">1 Point</string>
+    <string name="_2_points">2 Points</string>
+    <string name="_3_points">3 Points</string>
+    <string name="_4_points">4 Points</string>
+    <string name="player_1">Player-1:</string>
+    <string name="player_2">Player-2:</string>
+    <string name="_100">100</string>
+    <string name="_20">+20</string>
+    <string name="score_100_points_to_win">Score 100 points to Win</string>
+    <string name="_100_points_to_win">100 Points to Win</string>
+    <string name="weapon_is_not_assigned">Weapon is not assigned</string>
+    <string name="game_page_home_button">Game Page Home</string>
+    <string name="game_page_new_game_button">Game Page New Game</string>
+    <string name="turn_1">TURN: 1</string>
+    <string name="random_toss_decision_player_1_play_first">Random toss decision: Player 1 play first</string>
+    <string name="combo_details">Combo = 5 points: knife,pistol,armoured car \n\t\t\t\t\t\t\t10 points: arrow,shot gun,tank \n\t\t\t\t\t\t\t15 points: tri-spear,sniper rifle,artillery \n\t\t\t\t\t\t\t20 points: sword,assault rifle,fighter aircraft.</string>
+    <string name="dual_combo_details">Dual Combo = 15 points: knife,pistol,armoured car \n\t\t\t\t\t\t\t25 points: arrow,shot gun,tank \n\t\t\t\t\t\t\t35 points: tri-spear,sniper rifle,artillery \n\t\t\t\t\t\t\t45 points: sword,assault rifle,fighter aircraft.</string>
+    <string name="triple_combo_details">Triple Combo = 25 points: knife,pistol,armoured car \n\t\t\t\t\t\t\t40 points: arrow,shot gun,tank \n\t\t\t\t\t\t\t55 points: tri-spear,sniper rifle,artillery \n\t\t\t\t\t\t\t70 points: sword,assault rifle,fighter aircraft.</string>
+    <string name="quad_combo_details">Quad Combo = 35 points: knife,pistol,armoured car \n\t\t\t\t\t\t\t55 points: arrow,shot gun,tank \n\t\t\t\t\t\t\t75 points: tri-spear,sniper rifle,artillery \n\t\t\t\t\t\t\t95 points: sword,assault rifle,fighter aircraft.</string>
+    <string name="this_game_is_developed_by_ashutosh_dwibedi">This Game is developed by ASHUTOSH DWIBEDI</string>
+    <string name="start_new_game">Start New Game?</string>
+    <string name="your_opponent_will_win_this_game">Your opponent will win this game!</string>
+    <string name="yes">Yes</string>
+    <string name="back">Back</string>
+    <string name="player">PLAYER</string>
+    <string name="username_already_exists">⚠️ Username Already Exists!</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="and_team">AND \tTEAM</string>
+    <string name="loading">Loading...</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/tree_leaves_night">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="@string/edit_details"
+                android:textAlignment="center"
+                android:textColor="@color/mutated_yellow_1"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:id="@+id/profile_page_edit_layout"
+                android:layout_margin="4dp"
+                app:counterMaxLength="25"
+                android:minEms="15"
+                android:maxEms="15"
+                app:boxStrokeWidth="2dp"
+                app:endIconMode="clear_text"
+                app:boxStrokeColor="@color/mutated_black"
+                app:cursorColor="@color/mutated_yellow_1"
+                app:startIconTint="@color/mutated_yellow_1"
+                app:endIconTint="@color/mutated_yellow_1"
+                android:textColorHint="@color/mutated_yellow_4"
+                app:hintTextColor="@color/mutated_yellow_4"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                app:startIconDrawable="@drawable/baseline_person_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_edit_dialog_name_extract_text"
+                    android:imeOptions="flagNoExtractUi"
+                    android:textColor="@color/mutated_yellow_1"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profile_page_password_edit_layout"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:maxEms="15"
+                android:minEms="15"
+                app:boxStrokeWidth="2dp"
+                app:counterMaxLength="25"
+                app:endIconMode="password_toggle"
+                app:boxStrokeColor="@color/mutated_black"
+                app:cursorColor="@color/mutated_yellow_1"
+                app:startIconTint="@color/mutated_yellow_1"
+                app:endIconTint="@color/mutated_yellow_1"
+                android:textColorHint="@color/mutated_yellow_4"
+                app:hintTextColor="@color/mutated_yellow_4"
+                app:startIconDrawable="@drawable/baseline_key_24">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profile_edit_dialog_password_extract_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/mutated_yellow_1"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/black"
+                android:textColor="@color/mutated_yellow_1"
+                android:backgroundTint="@color/mutated_black"
+                android:id="@+id/profile_edit_dialog_ok_button"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                app:rippleColor="@color/black"
+                android:textColor="@color/mutated_yellow_1"
+                style="@style/Widget.Material3.Button"
+                app:cornerRadius="8dp"
+                android:backgroundTint="@color/mutated_black"
+                android:id="@+id/profile_edit_dialog_cancel_button"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

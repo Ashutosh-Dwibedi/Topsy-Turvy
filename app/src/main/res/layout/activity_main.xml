@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_constraint_layout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/login_background"
+        android:src="@drawable/login_scroll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_home"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_person_24"
+        app:iconSize="28dp"
+        android:visibility="visible"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signup_home"
+        style="@style/Widget.Material3.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        app:icon="@drawable/baseline_person_add_alt_1_24"
+        app:iconSize="28dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.2"
+        android:contentDescription="@string/feather_and_ink"
+        android:src="@drawable/feather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:id="@+id/name_edit_layout"
+        app:counterMaxLength="25"
+        android:minEms="15"
+        android:maxEms="15"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="clear_text"
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/mutated_black"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintHorizontal_bias="0.33">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_extract_text"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_edit_layout"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:maxEms="15"
+        android:minEms="15"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
+        app:counterMaxLength="25"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/mutated_black"
+        app:layout_constraintBottom_toTopOf="@+id/signup_password_confirm_edit_layout"
+        app:layout_constraintEnd_toEndOf="@+id/name_edit_layout"
+        app:layout_constraintStart_toStartOf="@+id/name_edit_layout"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit_layout"
+        app:startIconDrawable="@drawable/baseline_key_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_extract_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signup_password_confirm_edit_layout"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:maxEms="15"
+        android:minEms="15"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="2dp"
+        app:counterMaxLength="25"
+        app:endIconMode="password_toggle"
+        app:hintTextColor="@color/mutated_black"
+        app:layout_constraintEnd_toEndOf="@+id/password_edit_layout"
+        app:layout_constraintStart_toStartOf="@+id/password_edit_layout"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_layout"
+        app:startIconDrawable="@drawable/baseline_key_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_password_confirm_extract_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background"
+        android:text="@string/signup"
+        android:padding="8dp"
+        android:textAllCaps="false"
+        android:textColor="@color/mutated_yellow_1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:id="@+id/login_signUp_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/password_edit_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.Material3.Button.IconButton"
+        app:icon="@drawable/baseline_arrow_back_ios_24"
+        app:iconTint="@color/dark_yellow"
+        app:iconSize="28dp"
+        android:id="@+id/home_back_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintVertical_bias="0.25"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

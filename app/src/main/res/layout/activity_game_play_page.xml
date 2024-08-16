@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/game_page_base_constraint_layout"
+    android:background="@drawable/game_page_background"
+    tools:context=".GamePlayPage">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintVertical_bias="0.85">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rotation="90"
+            android:id="@+id/detail_image_1"
+            app:srcCompat="@drawable/knife_transparent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_arrow_right_alt_24"
+            app:tint="@color/mutated_yellow_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="@string/_1_point"
+            android:textAlignment="center"
+            android:textColor="@color/mutated_yellow_1"
+            android:textStyle="bold|italic" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="270"
+                android:id="@+id/detail_image_2"
+                app:srcCompat="@drawable/arrow_transparent" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/baseline_arrow_right_alt_24"
+                app:tint="@color/mutated_yellow_1"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/_2_points"
+                android:textAlignment="center"
+                android:textColor="@color/mutated_yellow_1"
+                android:textStyle="bold|italic"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:rotation="180"
+                android:id="@+id/detail_image_3"
+                android:src="@drawable/spear_tri_shape" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/mutated_yellow_1"
+                app:srcCompat="@drawable/baseline_arrow_right_alt_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textColor="@color/mutated_yellow_1"
+                android:text="@string/_3_points"
+                android:textAlignment="center"
+                android:textStyle="bold|italic" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:id="@+id/detail_image_4"
+                android:src="@drawable/sword_transparent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tint="@color/mutated_yellow_1"
+                app:srcCompat="@drawable/baseline_arrow_right_alt_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="@string/_4_points"
+                android:textAlignment="center"
+                android:textColor="@color/mutated_yellow_1"
+                android:textStyle="bold|italic"
+                tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_home_24"
+        app:iconSize="36dp"
+        android:alpha="0.7"
+        android:rotationY="30"
+        android:rotationX="-7"
+        app:strokeWidth="1dp"
+        app:cornerRadius="12dp"
+        android:contentDescription="@string/game_page_home_button"
+        app:rippleColor="@color/door_color"
+        android:id="@+id/game_page_home_button"
+        app:strokeColor="@color/mutated_yellow_1"
+        app:iconTint="@color/mutated_yellow_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintVertical_bias="0.8"/>
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/baseline_restart_alt_24"
+        app:iconSize="36dp"
+        android:alpha="0.7"
+        android:rotationY="30"
+        android:rotationX="7"
+        app:strokeWidth="1dp"
+        app:cornerRadius="12dp"
+        app:rippleColor="@color/door_color"
+        android:contentDescription="@string/game_page_new_game_button"
+        android:id="@+id/game_page_new_game_button"
+        app:strokeColor="@color/mutated_yellow_1"
+        app:iconTint="@color/mutated_yellow_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintVertical_bias="0.6"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:rotation="-3"
+        android:rotationY="-10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/player_1"
+            android:textColor="@color/mutated_yellow_1"
+            android:textSize="22sp"
+            android:id="@+id/game_page_player_name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/game_page_player_score"
+            android:textColor="@color/mutated_yellow_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/player_score_incrementer"
+            android:visibility="invisible"
+            android:textColor="@color/red"
+            android:layout_marginStart="12dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:rotation="-3"
+        android:rotationY="-10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_2"
+        android:textColor="@color/mutated_yellow_1"
+        android:textSize="22sp"
+        android:id="@+id/game_page_guest_or_ai_name"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:id="@+id/game_page_guest_or_ai_score"
+            android:textColor="@color/mutated_yellow_1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/guest_or_ai_score_incrementer"
+            android:visibility="invisible"
+            android:textColor="@color/red"
+            android:layout_marginStart="12dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <GridLayout
+        android:id="@+id/game_gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="10"
+        android:rotation="-1.5"
+        android:rotationY="-2"
+        android:rotationX="1"
+        android:rowCount="5"
+        android:alpha="0.8"
+        android:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.95"/>
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:gravity="center_horizontal"
+        android:rotationY="-12"
+        android:text="@string/_100_points_to_win"
+        android:textColor="@color/mutated_yellow_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turn_1"
+        android:textColor="@color/mutated_yellow_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        android:textAllCaps="true"
+        android:rotationY="-12"
+        android:id="@+id/turn_number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintVertical_bias="0.08"
+        tools:ignore="TooManyViews" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

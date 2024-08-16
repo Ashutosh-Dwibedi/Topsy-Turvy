@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="12dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/new_exit_dialog_linear_layout"
+            android:background="@drawable/gradient_background_2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:text="@string/username_already_exists"
+                android:textAlignment="center"
+                android:textColor="@color/mutated_yellow_1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/error_heading"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                app:cornerRadius="8dp"
+                app:rippleColor="@color/black"
+                android:textColor="@color/mutated_yellow_1"
+                android:backgroundTint="@color/mutated_black"
+                android:id="@+id/error_action_button"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textAllCaps="true"
+                app:rippleColor="@color/black"
+                android:textColor="@color/mutated_yellow_1"
+                style="@style/Widget.Material3.Button"
+                app:cornerRadius="8dp"
+                android:backgroundTint="@color/mutated_black"
+                android:id="@+id/error_dialog_back_button"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
