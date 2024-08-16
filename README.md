@@ -17,4 +17,4 @@ Ashutosh Dwibedi
 <br>
 github - <a href="https://github.com/Ashutosh-Dwibedi">Ashutosh-Dwibedi</a>
 <h2>LICENSE</h2>
-<a href="https://github.com/Ashutosh-Dwibedi/Tic-Tac-Toe/blob/main/LICENSE">MIT LICENSE</a>
+<a href="https://github.com/Ashutosh-Dwibedi/Topsy-Turvy/blob/main/LICENSE">MIT LICENSE</a>
