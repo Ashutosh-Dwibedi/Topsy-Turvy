@@ -14,7 +14,7 @@ This is an offline android game project developed using Andoid Studio, Java, SQL
 </ul>
 <h2>Logo</h2>
 ![topsy_turvy_logo](https://github.com/user-attachments/assets/f39eb1f5-b3b0-4b9c-ad2b-c6f029425632)
-<img src="topsy_turvy_logo" width="196" height="196">
+<img src="[topsy_turvy_logo](https://github.com/user-attachments/assets/f39eb1f5-b3b0-4b9c-ad2b-c6f029425632)" width="196" height="196">
 <h2>Auther</h2>
 Ashutosh Dwibedi
 <br>
