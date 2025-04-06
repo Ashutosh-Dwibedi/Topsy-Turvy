@@ -10,7 +10,7 @@ This is an offline android game project developed using Andoid Studio, Java, SQL
   <li>Stores game details and player details in database</li>
   <li>ROOM Persistency Library is used for database implementation</li>
   <li>Attractive UI and realistic sound effects</li>
-  <li>Biometric Authentication on some user functions (such as- delete account,reset account, etc.)</li>
+  <li>Biometric Authentication on some user functions (such as- delete account, reset account, etc.)</li>
 </ul>
 <h2>Logo</h2>
 <!-- ![topsy_turvy_logo](https://github.com/user-attachments/assets/f39eb1f5-b3b0-4b9c-ad2b-c6f029425632) -->
